@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from MyApplication import views
+#from MyApplication import views
+from TimerApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Mac/', views.MyApplicationView)
+    path('Mac/', views.MyApplicationView),
+    path('Time/', views.My_Very_First_Timer)
 ]
